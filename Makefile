@@ -1,4 +1,7 @@
-obj-m := call_dev.o
+# m -> module, y -> built-in.
+CONFIG_TEST = m
+
+obj-$(CONFIG_TEST) := call_dev.o
 
 CC := gcc
 
